@@ -6,6 +6,22 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto`
+        ],
+        display: 'swap'
+      }
+    },
+    `gatsby-plugin-resolve-src`,
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        additionalData: `@import "${__dirname}/src/styles/styles";`,
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
