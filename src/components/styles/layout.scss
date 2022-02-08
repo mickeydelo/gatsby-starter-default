@@ -19,6 +19,10 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+main {
+  display: flex;
+  flex-direction: column;
+}
 article,
 aside,
 details,
@@ -26,7 +30,6 @@ figcaption,
 figure,
 footer,
 header,
-main,
 menu,
 nav,
 section,
